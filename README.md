@@ -1,0 +1,1 @@
+# chat-use-case-front-end-module
