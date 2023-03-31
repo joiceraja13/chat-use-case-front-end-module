@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Rubik', sans-serif;
+        }
+        
+        body {
+            background-image: url("images/background1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .main-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .top-right {
+            margin-left: 2rem;
+        }
+        
+        .chat-head {
+            margin-top: 8px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: ;
+        }
+        
+        .head-box2 img {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+        
+        .head-box3 {
+            margin-left: 1rem;
+        }
+        
+        .head-box4 {
+            margin-left: 5rem;
+        }
+        
+        .mobile-box1 {
+            height: 725px;
+            width: 350px;
+            margin: 5rem;
+            background-color: bisque;
+            border-radius: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .mobile-box2 {
+            width: 330px;
+            height: 702px;
+            border-radius: 2rem;
+            background-color: aliceblue;
+            margin-top: 10px;
+        }
+        
+        .mobile-box3 {
+            width: 330;
+            height: 100px;
+            background-color: hsl(264, 100%, 61%);
+            border-radius: 2rem 2rem 6px 6px;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .mobile-notch {
+            width: 200px;
+            height: 35px;
+            background-color: white;
+            z-index: +1;
+            margin-left: 65px;
+            border-radius: 0 0 20px 20px;
+        }
+        
+        .chat {
+            background-color: hsl(270, 20%, 96%);
+            height: 600px;
+            width: 330px;
+            border-radius: 0 0 2rem 2rem;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .chat-box1 {
+            width: 190px;
+            background-color: hsl(279, 39%, 93%);
+            border-radius: 10px;
+            margin-top: 1rem;
+            margin-left: 1rem;
+            padding: 10px;
+            color: hsl(276, 55%, 52%);
+            font-size: 14px;
+        }
+        
+        .chat-box2 {
+            width: 200px;
+            background-color: hsl(279, 39%, 93%);
+            border-radius: 10px;
+            margin-top: 8px;
+            margin-left: 1rem;
+            padding: 5px;
+            color: hsl(276, 55%, 52%);
+            font-size: 14px;
+        }
+        
+        .chat-box3 {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 8px;
+            margin-right: 1rem;
+        }
+        
+        .chat-img1 img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+        }
+        
+        .chat-img2 img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+        
+        .chat-img3 img {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+        }
+        
+        .chat-box4 {
+            width: 200px;
+            height: 60px;
+            border-radius: 10px;
+            margin-top: 8px;
+            padding: 5px;
+            background-color: hsl(0, 0%, 100%);
+            align-self: flex-end;
+            margin-right: 1rem;
+            font-size: 14px;
+            color: hsl(271, 15%, 43%);
+        }
+        
+        .chat-box5 {
+            height: 40px;
+            border-radius: 10px;
+            margin-top: 8px;
+            padding: 10px;
+            background-color: hsl(0, 0%, 100%);
+            align-self: flex-end;
+            margin-right: 1rem;
+            font-size: 14px;
+            color: hsl(271, 15%, 43%);
+        }
+        
+        .chat-box6 {
+            width: 250px;
+            background-color: hsl(279, 39%, 93%);
+            border-radius: 10px;
+            margin-top: 8px;
+            margin-left: 1rem;
+            padding: 5px;
+            color: hsl(276, 55%, 52%);
+            font-size: 14px;
+        }
+        
+        .chat-box7 {
+            width: 250px;
+            height: 50px;
+            background-color: hsl(264, 100%, 61%);
+            border-radius: 10px;
+            margin-top: 8px;
+            margin-left: 1rem;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .box7-part1 .circle {
+            border-radius: 50px;
+            border: 2px brown;
+            height: 22px;
+            width: 22px;
+            z-index: +1;
+        }
+        
+        .box7-part3 {
+            color: white;
+        }
+        
+        .chat-box8 {
+            width: 250px;
+            height: 50px;
+            background-color: hsl(264, 100%, 61%);
+            border-radius: 10px;
+            margin-top: 8px;
+            margin-left: 1rem;
+            padding: 5px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        .box8-part1 .circle2 {
+            border-radius: 50%;
+            border: 2px hsl(293, 100%, 63%);
+            height: 22px;
+            width: 22px;
+        }
+        
+        .box8-part3 {
+            color: white;
+        }
+        
+        .chat-search {
+            display: flex;
+            flex-direction: row;
+            border-radius: 4rem;
+            height: 60px;
+            background-color: white;
+            margin: 1rem;
+            align-items: center;
+        }
+        
+        .search-type .search-box {
+            border: none;
+            height: 40px;
+            margin-left: 3rem;
+        }
+        
+        .search-btn button {
+            height: 40px;
+            width: 40px;
+            background-color: hsl(271, 36%, 24%);
+            border-radius: 50%;
+            padding: 2px;
+            margin-left: 2rem;
+        }
+        
+        .search-btn button a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        @media (max-width:400px) {
+            body {
+                background-image: url("images/mobile-background.jpg");
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            .main-content {
+                flex-direction: column;
+                margin: 0;
+                padding: 0;
+            }
+            .top-left {
+                padding: 2rem;
+            }
+            .top-right {
+                padding: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-content">
+        <div class="top-left">
+            <div class="mobile-box1">
+                <div class="mobile-box2">
+                    <div class="mobile-box3">
+                        <div class="mobile-notch">
+
+                        </div>
+                        <div class="chat-head">
+                            <div class="head-box1">
+                                <span class="material-symbols-outlined" style="color:white; font-size: 2rem;">
+                                    chevron_left
+                                    </span>
+                            </div>
+                            <div class="head-box2">
+                                <img src="images\avatar.jpg">
+                            </div>
+                            <div class="head-box3">
+                                <h3 style="color:white ;"> Samuel Green</h3>
+                                <p style="color: hsl(276, 100%, 81%); font-size: 14px; ">Available to Walk</p>
+                            </div>
+                            <div class="head-box4">
+                                <span class="material-symbols-outlined" style="font-size:25px; color: white;">
+                                    more_vert
+                                    </span>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <div class="chat">
+                        <div class="chat-box1">
+                            <p>That sounds great. I’d be happy with that.
+                            </p>
+                        </div>
+                        <div class="chat-box2">
+                            <p>Could you send over some pictures of your dog, please?</p>
+                        </div>
+                        <div class="chat-box3">
+                            <div class="chat-img1">
+                                <img src="images\dog-image-1.jpg">
+                            </div>
+                            <div class="chat-img2">
+                                <img src="images\dog-image-2.jpg">
+                            </div>
+                            <div class="chat-img3">
+                                <img src="images\dog-image-3.jpg">
+                            </div>
+                        </div>
+                        <div class="chat-box4">
+                            <p>Here are a few pictures. She’s a happy girl!</p>
+                        </div>
+                        <div class="chat-box5">
+                            <p>Can you make it?</p>
+                        </div>
+                        <div class="chat-box6">
+                            <p> She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+                        </div>
+                        <div class="chat-box7">
+                            <div class="box7-part1">
+                                <div class="circle">
+
+                                </div>
+                            </div>
+                            <div class="box7-part2">
+                                <p style="color:white">30 minute walk</p>
+                            </div>
+                            <div class="box7-part3">
+                                <h2>$29</h2>
+                            </div>
+                        </div>
+                        <div class="chat-box8">
+                            <div class="box8-part1">
+                                <div class="circle2">
+
+                                </div>
+                            </div>
+                            <div class="box8-part2">
+                                <p style="color:white">1 hour walk</p>
+                            </div>
+                            <div class="box8-part3">
+                                <h2>$49</h2>
+                            </div>
+                        </div>
+                        <div class="chat-search">
+                            <div class="search-type">
+                                <input class="search-box" type="search" placeholder="Type a message…"></div>
+                            <div class="search-btn">
+                                <button type="button"><a href="#link"><h1> > </h1></a></button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-right">
+            <div class="description">
+                <h1 style="color: hsl(271, 36%, 24%); font-size: 3rem;">Simple booking</h1>
+                <p style="color:hsl(270, 7%, 64%); line-height: 26px; margin-top: 2rem;">Stay in touch with our dog walkers through the chat<br> interface. This makes it easy to discuss arrangements and <br> make bookings. Once the walk has been completed you can
+                    <br> rate your walker and book again all through the chat</p>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
